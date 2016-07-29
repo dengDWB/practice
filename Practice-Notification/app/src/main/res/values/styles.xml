@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BannerButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="BannerLeftButton" parent="BannerButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="BannerRightButton" parent="BannerButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="ColorViewStyle0" parent="@style/ColorViewStyle">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:background">@color/colors0</item>
+    </style>
+    <style name="ColorViewStyle1" parent="@style/ColorViewStyle">
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:background">@color/colors1</item>
+    </style>
+    <style name="ColorViewStyle2" parent="@style/ColorViewStyle">
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:background">@color/colors2</item>
+    </style>
+    <style name="ColorViewStyle3" parent="@style/ColorViewStyle">
+        <item name="android:layout_marginLeft">21dp</item>
+        <item name="android:background">@color/colors3</item>
+    </style>
+    <style name="ColorViewStyle4" parent="@style/ColorViewStyle">
+        <item name="android:layout_marginLeft">28dp</item>
+        <item name="android:background">@color/colors4</item>
+    </style>
+
+    <style name="ColorViewStyle">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+    </style>
+
+    <style name="ToolBarTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="src_height">20dp</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

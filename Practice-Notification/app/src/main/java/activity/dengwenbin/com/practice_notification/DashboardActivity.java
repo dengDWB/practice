@@ -97,7 +97,6 @@ public class DashboardActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
         }
     };
 
@@ -149,10 +148,6 @@ public class DashboardActivity extends AppCompatActivity {
         if(imgSettingValue>0){
             setRedDot(bvSetting);
         }
-
-
-
-
     }
 
     public void setRedDot(BadgeView badgeView){
@@ -162,7 +157,6 @@ public class DashboardActivity extends AppCompatActivity {
         badgeView.setBadgeMargin(0, 0);
         badgeView.show();
     }
-
 
     public void testShowState(){
         JSONObject fileInfo = new JSONObject();
@@ -194,7 +188,4 @@ public class DashboardActivity extends AppCompatActivity {
             }
         }
     }
-
-
-
 }

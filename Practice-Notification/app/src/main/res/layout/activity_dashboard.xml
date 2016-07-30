@@ -74,13 +74,14 @@
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         android:orientation="horizontal">
-
+        <!--在TabView的外面加了一次LinearLayout-->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:gravity="center">
+            <!-- 在@style/ToolBarTab删除了layout_weight属性-->
             <activity.dengwenbin.com.practice_notification.TabView
                 android:id="@+id/tabKPI"
                 style="@style/ToolBarTab"

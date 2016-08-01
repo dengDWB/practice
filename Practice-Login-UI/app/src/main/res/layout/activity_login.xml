@@ -45,6 +45,8 @@
             android:hint="请输入账号"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingRight="45dp"
             android:textCursorDrawable="@null"
             android:inputType="textPersonName"
             android:textSize="20dip"
@@ -81,12 +83,13 @@
             android:hint="请输入密码"
             android:inputType="textPassword"
             android:textCursorDrawable="@null"
+            android:gravity="center"
+            android:paddingRight="45dp"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dip"
             android:background="@null"
             />
-
     </LinearLayout>
 
     <View

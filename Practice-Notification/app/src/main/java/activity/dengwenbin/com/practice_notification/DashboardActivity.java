@@ -23,7 +23,8 @@ public class DashboardActivity extends AppCompatActivity {
     private TabView tabKpi,tabAnalyse,tabApp,tabMessage;
     private ImageView img_setting;
     private BadgeView bvKpi,bvAnalyse,bvApp,bvMessage,bvSetting;
-    private String notificationFileName="notifition.json",notificationFileFoler="%s/%s/config";
+    private String notificationFileName = "notifition.json",notificationFileFoler = "%s/%s/config";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +54,6 @@ public class DashboardActivity extends AppCompatActivity {
         tabAnalyse.setOnClickListener(mTabChangeListener);
         tabApp.setOnClickListener(mTabChangeListener);
         tabMessage.setOnClickListener(mTabChangeListener);
-
     }
 
     private final View.OnClickListener mTabChangeListener = new View.OnClickListener() {
@@ -184,6 +184,20 @@ public class DashboardActivity extends AppCompatActivity {
                 FileUtil.isFileDir(notificationFileFoler,notificationFileName);
                 FileUtil.writeFile(fileInfo.toString(), notificationFileFoler+"/"+notificationFileName);
             } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void launchSettingActivity(View v){
+        bvSetting.setVisibility(View.INVISIBLE);
+        if (new File (notificationFileFoler,notificationFileName).exists()){
+            try {
+                notificationJSON.put("setting",0);
+                FileUtil.writeFile(notificationJSON.toString(),notificationFileFoler+"/"+notificationFileName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
